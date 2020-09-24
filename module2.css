@@ -1,0 +1,47 @@
+h1 {
+    background-color: silver;
+}
+
+div{
+    background-color: tomato;
+    padding: 10px ;
+    /** margin-bottom: 10%;*/
+    width: 90%;
+    float: right;
+}    
+.row{
+    width: 100%;
+}
+.cl-1 , .cl-3 ,.cl-6{float: left;
+    border: 5px solid plum;
+     border-spacing: 15px;
+     float: middle;
+     
+
+}
+/*large devices only*/  
+@media(min-width : 992px ) and (max-width : 1900px)
+{
+   .cl-3 {
+       width :30%;
+       background-color: snow;
+   }
+
+}
+@media(min-width : 768px) and (max-width : 991px)
+{
+ 
+    .cl-6{
+        width :40%;
+        border : solid blue;
+        background-color: orchid;
+    }
+}
+@media (min-width : 0px) and (max-width : 767px)
+{
+ 
+    .cl-1{
+        width :100%;
+        background-color: pink;
+    }
+}
